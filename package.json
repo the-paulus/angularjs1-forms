@@ -1,0 +1,37 @@
+{
+  "name": "angularjs1-form-example",
+  "version": "1.0.0",
+  "description": "Demonstrates how to use forms in AngularJS 1.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-paulus/angularjs1-forms.git"
+  },
+  "keywords": [],
+  "author": "Paul Lyon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-paulus/angularjs1-forms/issues"
+  },
+  "homepage": "https://github.com/the-paulus/angularjs1-forms#readme",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-route": "^1.6.5"
+  },
+  "devDependencies": {
+    "es6-promise": "^4.1.1",
+    "es6-shim": "^0.35.3",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-webserver": "^0.9.1",
+    "gulp-typescript": "^3.2.1",
+    "typescript": "^2.4.2",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.4.2",
+    "systemjs": "^0.20.17",
+    "zone.js": "^0.8.16"
+  }
+}

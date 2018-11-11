@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" ng-app="formExampleApp">
+  <head>
+    <meta charset="UTF-8">
+    <title>AngularJS 1 Forms Example</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,100,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/angular/angular.js"></script>
+    <script src="js/angular/angular-route.js"></script>
+
+    <script src="js/formexampleapp.js"></script>
+
+    <script src="js/controllers/index.js"></script>
+    <script src="js/controllers/checkboxes.js"></script>
+    <script src="js/controllers/radios.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <div class="content">
+      <nav ng-include="'views/navigation.html'"></nav>
+      <main ng-view></main>
+    </div>
+  </body>
+</html>

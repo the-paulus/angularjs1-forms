@@ -1,0 +1,24 @@
+<h2>Static Checkboxes</h2>
+<form name="staticCheckboxes" novalidate ng-submit="submitStaticCBs()">
+  <label for="cb1"><input type="checkbox" name="cb1" ng-model="checkboxes.cb1" ng-true-value="1" />Checkbox 1</label><br/>
+  <label for="cb2"><input type="checkbox" name="cb2" ng-model="checkboxes.cb2" ng-true-value="2" />Checkbox 2</label><br/>
+  <label for="cb3"><input type="checkbox" name="cb3" ng-model="checkboxes.cb3" ng-true-value="3" />Checkbox 3</label><br/>
+  <label for="cb4"><input type="checkbox" name="cb4" ng-model="checkboxes.cb4" ng-true-value="4" />Checkbox 4</label><br/>
+  <label for="cb5"><input type="checkbox" name="cb5" ng-model="checkboxes.cb5" ng-true-value="5" />Checkbox 5</label><br/>
+  <button>Submit</button>
+  <div>
+    <p ng-show="message">{{ message }}</p>
+  </div>
+</form>
+
+<h2>Dynamic Checkboxes</h2>
+<form name="dynamicCheckboxes" novalidate ng-submit="submitDynamicCBs()">
+  <label for="numCBs">Number of checkboxes to generate<input type="number" name="numCBs" min="1" max="10" required="true" ng-model="numCBs" /></label><button ng-click="generateCBs()">Generate</button>
+  <div ng-repeat="cb in [] | range:numCBs">
+    <label for="cb{{ cb + 1 }}"><input type="checkbox" name="cb{{ cb + 1 }}" ng-model="checkboxes.cb1" ng-true-value="{{ cb + 1 }}" />Checkbox {{cb + 1}}</label>
+  </div>
+  <button>Submit</button>
+  <div>
+    <p ng-show="dynamic_message">{{dynamic_message}}</p>
+  </div>
+</form>
